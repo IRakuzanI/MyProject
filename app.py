@@ -7,12 +7,13 @@ from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy import SQLAlchemy
 from flask_admin import Admin
 from datetime import datetime
-import os
+#import os
 
 
-file_path = os.path.abspath(os.getcwd()) + "\\blog.db"
+#file_path = os.path.abspath(os.getcwd()) + "\\blog.db"
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + file_path
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + file_path
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'any_symbols'
 db = SQLAlchemy(app)
