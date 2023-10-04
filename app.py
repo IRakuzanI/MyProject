@@ -9,6 +9,7 @@ from flask_admin import Admin
 from datetime import datetime
 import os
 
+''' some commit '''
 
 file_path = os.path.abspath(os.getcwd()) + "/blog.db"
 app = Flask(__name__)
